@@ -14,7 +14,6 @@
             --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
-        /* Automatic Dark Mode override if user prefers it */
         @media (prefers-color-scheme: dark) {
             :root {
                 --bg-color: #1a1a1a;
@@ -38,13 +37,37 @@
             padding: 40px 0;
         }
 
-        /* Markdown Content Styling */
-        h1 { font-size: 2.5rem; letter-spacing: -1px; margin-bottom: 10px; }
-        h2 { margin-top: 40px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        /* --- Header Styling --- */
+        h1 { 
+            font-size: 2.5rem; 
+            letter-spacing: -1px; 
+            margin-bottom: 10px; 
+            line-height: 1.2;
+        }
+        
+        /* New style for the Description */
+        .description {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            opacity: 0.8;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .meta { 
+            color: #888; 
+            font-size: 0.9rem; 
+            margin-bottom: 40px; 
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        /* --- Content Styling --- */
+        h2 { margin-top: 40px; margin-bottom: 15px; }
         a { color: var(--accent-color); text-decoration: none; }
         a:hover { text-decoration: underline; }
         
-        /* Image Styling */
         img {
             max-width: 100%;
             height: auto;
@@ -53,32 +76,36 @@
             display: block;
         }
         
-        /* Code Block Styling */
         pre {
             background: #f4f4f4;
             padding: 15px;
             border-radius: 5px;
             overflow-x: auto;
-        }
-        @media (prefers-color-scheme: dark) {
-            pre { background: #333; }
-            h2 { border-color: #333; }
+            font-size: 0.9rem;
         }
 
-        .meta { color: #888; font-size: 0.9rem; margin-bottom: 40px; }
+        @media (prefers-color-scheme: dark) {
+            pre { background: #333; }
+            .meta { border-bottom-color: #333; }
+        }
+
         footer { margin-top: 60px; font-size: 0.8rem; color: #888; text-align: center; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Header info from config -->
+        <!-- Header -->
         <header>
             <h1>{{ site.title }}</h1>
+            
+            <!-- This was missing before! -->
+            <p class="description">{{ site.description }}</p> 
+            
             <p class="meta">Written by {{ site.author }}</p>
         </header>
 
-        <!-- This is where your Markdown gets injected -->
+        <!-- Content -->
         <main>
             {{ content }}
         </main>

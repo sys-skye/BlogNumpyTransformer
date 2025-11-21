@@ -1,4 +1,4 @@
-title: "Decoder only Transformer for Language Modeling"
+title: "Decoder only Transformer for Language Modeling with NumPy"
 description: "only using NumPy and standard Python libraries"
 author: "Skye"
 

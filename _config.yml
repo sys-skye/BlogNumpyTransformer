@@ -1,9 +1,9 @@
-title: "Decoder only Transformer for Language Modeling with NumPy"
-description: "only using NumPy and standard Python libraries"
+title: "Decoder only Transformer for Language Modeling from Scratch"
+description: "Only using NumPy and standard Python libraries"
 author: "Skye"
 
 # --- Easy Color Configuration ---
 # You can change these hex codes to customize your site
-color_text: "#ffffff"
-color_bg: "#333333"
+color_bg: "#ffffff"
+color_text: "#333333"
 color_accent: "#2563eb" # The color of links and hover effects

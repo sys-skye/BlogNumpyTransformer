@@ -1,9 +1,9 @@
-title: "My Awesome Post"
-description: "A story about code and life."
-author: "Your Name"
+title: "Decoder only Transformer for Language Modeling"
+description: "only using NumPy and standard Python libraries"
+author: "Skye"
 
 # --- Easy Color Configuration ---
 # You can change these hex codes to customize your site
-color_bg: "#ffffff"
-color_text: "#333333"
+color_text: "#ffffff"
+color_bg: "#333333"
 color_accent: "#2563eb" # The color of links and hover effects

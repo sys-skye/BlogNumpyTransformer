@@ -1,0 +1,9 @@
+title: "My Awesome Post"
+description: "A story about code and life."
+author: "Your Name"
+
+# --- Easy Color Configuration ---
+# You can change these hex codes to customize your site
+color_bg: "#ffffff"
+color_text: "#333333"
+color_accent: "#2563eb" # The color of links and hover effects
